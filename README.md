@@ -46,3 +46,10 @@ Abra `http://localhost:5000`.
 6. Gere um domínio em **Settings > Networking > Generate Domain**.
 
 A rota `/health` pode ser usada para verificação de saúde da aplicação.
+
+
+## Correção do deploy
+
+O arquivo `runtime.txt` com a versão exata `3.12.8` foi removido porque o Railpack
+não conseguiu validar o artefato dessa versão. O projeto agora usa `.python-version`
+com `3.12`, permitindo que o Railway selecione uma versão de correção compatível.
