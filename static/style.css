@@ -1,0 +1,49 @@
+:root {
+    --campaign-blue: #0751b9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background: var(--campaign-blue);
+}
+
+body {
+    min-height: 100svh;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-image: url("/static/images/desktop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 768px), (orientation: portrait) {
+    .hero {
+        background-image: url("/static/images/mobile.png");
+        background-position: center top;
+    }
+}

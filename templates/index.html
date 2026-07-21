@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0751b9">
+    <meta name="description" content="Site oficial de Anice, pré-candidata a deputada estadual.">
+    <title>Anice 11888</title>
+
+    <link rel="preload"
+          href="{{ url_for('static', filename='images/desktop.png') }}"
+          as="image"
+          media="(min-width: 769px)">
+    <link rel="preload"
+          href="{{ url_for('static', filename='images/mobile.png') }}"
+          as="image"
+          media="(max-width: 768px)">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="hero" aria-label="Anice 11888 — pré-candidata a deputada estadual">
+        <span class="sr-only">
+            Anice 11888, pré-candidata a deputada estadual.
+        </span>
+    </main>
+</body>
+</html>
